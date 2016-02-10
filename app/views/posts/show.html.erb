@@ -1,0 +1,8 @@
+
+
+<%=image_tag(@post.image.url(:medium))%>
+<hr>
+<%=@post.description%>
+<hr>
+<%=@post.cat_id%>
+<%=link_to "All images", posts_path%>

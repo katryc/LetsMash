@@ -1,0 +1,30 @@
+
+<div class="parallax">
+
+  <div class="parallax-group">
+
+    <div class="layer base">
+      <div class="content">
+        LETSMASH
+      </div>
+    </div>
+
+    <div class="layer closer">
+      <div class="content">
+        Letsmash
+      </div>
+    </div>
+
+    <div class="layer closest">
+      <div class="content">
+       LETSMASH
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<% Category.all.each do |category|%>
+<%=link_to category.name, pictures_path(category: category.name)%>
+<%end%>
